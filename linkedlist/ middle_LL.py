@@ -25,12 +25,12 @@ class linkedlist:
         while current_node:
             print(current_node.value,end="->")
             current_node = current_node.next
-        
+    
     def findMiddleNode(self):
         slow  = self.head
         fast = self .head
         while fast and fast.next:
-            slow = slow.next
+            slow = slow.next    
             fast = fast.next.next
         # print(slow.value) 
         return slow.value
