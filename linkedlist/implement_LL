@@ -23,9 +23,20 @@ class LinkedList:
         while current_node:
             print(current_node.value,end='->')
             current_node = current_node.next
-            
+
         # print "None" at end if the linked list
         print(current_node)
+    def findMiddleOfLL(self,value):
+        current_node = self.head
+        count = 0
+        while current_node:
+            count+=1
+            current_node = current_node.next
+        middle_node = self.head
+        for _ in range(1,count//2+1):
+            middle_node = middle_node.next
+        print(count)
+
 
 values =[4,5,7,9,2,3]
 mylist = LinkedList()
