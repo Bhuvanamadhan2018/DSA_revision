@@ -16,7 +16,6 @@ class LinkedList:
         while current_node.next:
             current_node = current_node.next
         current_node.next = new_node
-
     def printNodes(self):
         current_node = self.head
 
@@ -35,7 +34,7 @@ class LinkedList:
         middle_node = self.head
         for _ in range(1,count//2+1):
             middle_node = middle_node.next
-        print(middle_node.value)
+        print(f"The middle node is:",middle_node.value)
         # return middle_node.value
 
 
