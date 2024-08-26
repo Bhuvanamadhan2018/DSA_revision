@@ -41,7 +41,7 @@ def preOrderTraversal(root:TreeNode,result:List)-> List:
 
 
 myTree = BinaryTree()
-values = [10,14,5,13,16,7,19,2]
+values = [10,14,5,13,16,7,19,2] 
 for value in values:
     myTree.insert_nodes(value)  
 
