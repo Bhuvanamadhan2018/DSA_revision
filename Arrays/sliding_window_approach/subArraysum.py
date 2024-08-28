@@ -1,6 +1,7 @@
 def SubArraySumEqualsTarget(arr,target):
+    # initialise two pointers at first index of arr
     left= 0
-    # right = 0
+    right = 0
     current_sum = 0
     
     for right in range(len(arr)):
@@ -17,6 +18,6 @@ def SubArraySumEqualsTarget(arr,target):
     return None
 
 arr = [3,4,5,6,2,9,6]
-target = 17
+target = 20
 result = SubArraySumEqualsTarget(arr,target)
 print(result)
